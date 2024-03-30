@@ -36,6 +36,8 @@ form {
     justify-content: space-between;
     color: rgba(0, 0, 0, 0.725);
     margin: 20px 0;
+    position: relative;
+
 }
 
 #c1,
@@ -47,6 +49,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: linear 1s .1s;
+    z-index: 1;
 }
 
 #c1 {
@@ -55,10 +59,12 @@ form {
 
 hr {
     align-self: center;
-    width: 100%;
-    height: 6px;
+    position: absolute;
+    left:60px;
+    z-index: -12;
+    border: none;
     background-color: rgba(21, 21, 22, 0);
-
+    transition:  linear 1s;
 }
 
 h2 {
@@ -102,14 +108,19 @@ input:focus {
 #pTwo {
     display: none;
 }
-@media (max-width:940px){
+
+@media (max-width:940px) {
     form {
         width: 80%;
     }
+    .c2{
+        background-color: rgba(255, 255, 255, 0.885);
+    }
 }
-@media (max-width:590px){
+
+@media (max-width:590px) {
     form {
-        width:100%;
+        width: 100%;
         padding: 20px;
     }
 }
