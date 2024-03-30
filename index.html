@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Password</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="c">
+          <div id="c1">1</div>
+          <hr />
+          <div id="c2">2</div>
+        </div>
+        <h2>personal information</h2>
+
+        <div id="pOne">
+          <label for="name">full name</label>
+          <div class="div">
+            <input type="text" id="name" />
+          </div>
+          <label for="pho">phone</label>
+          <div class="div">
+            <input type="number" id="pho" />
+          </div>
+          <label for="date">birth date</label>
+          <div class="div">
+            <input type="date" id="date" />
+          </div>
+          <button type="button" id="next">next</button>
+        </div>
+
+        <div id="pTwo">
+          <label for="mail">Email</label>
+          <div class="div">
+            <input type="email" id="mail" />
+          </div>
+          <label for="pass">Password</label>
+          <div class="div">
+            <input type="password" id="pass" />
+          </div>
+
+          <button type="button" id="prev">previous</button>
+          <button type="button" id="save">save</button>
+        </div>
+      </form>
+    </div>
+    <script src="master.js"></script>
+  </body>
+</html>
